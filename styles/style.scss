@@ -1,0 +1,248 @@
+@import 'var';
+@import 'funkci';
+@import 'home';
+
+
+
+*{
+    font-family: 'Rajdhani', sans-serif;
+   font-weight: 700;
+   font-style:normal;
+   text-transform:uppercase;
+   box-sizing:border-box;
+   margin:0;
+   padding:0;body {
+    overflow: hidden; /* Hide scrollbars */
+  }
+}
+html{
+   font-size:62%;
+   scroll-behavior: smooth;
+   overflow-x:hidden;
+
+}
+
+header{
+   width:100%;
+   display:flex;
+   align-items:center;
+   justify-content: space-between;
+   position:fixed;
+   top:0; left:0;
+   padding:1rem 0rem;
+   z-index:10;
+   background:white;
+
+   
+   .programa{
+   
+    margin:2rem 0;
+    font-size:2rem;
+       @include button();
+   }
+   nav{
+      ul{
+      
+          list-style:none;
+          display:flex;
+          align-items:center;
+          justify-content:space-around;
+      
+          li{
+              margin:1rem 0.3rem;
+   
+              a{
+                  font-style: normal;
+                  font-size:14px;
+                  text-decoration:none;
+                  color:$dark;
+                  padding:1rem;
+ 
+                  &:hover{
+                      color:$red;
+                  }
+            
+              }
+          }
+      }
+   }
+}
+.logo{
+padding-top:8px;
+   height:70px;
+    margin:20px;
+    
+}
+
+.icons{
+   display:flex;
+   flex-flow:row;
+margin-right:40px;
+margin-left:30px;
+   a{
+       text-decoration: none;
+       color:$dark;
+       font-size:23px;;
+       margin:.5rem 0;
+      
+   }
+}
+.icons2{
+    margin-right:30px;
+   display:flex;
+   height:100%;
+
+   i{
+    @include regbutton();
+       font-size:28px;
+       margin:.5rem 0;
+      
+   }
+}
+.home{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-flow:column;
+    background:url(https://www.lazarangelov.com/wp-content/uploads/2020/07/LA-BANNER-DT-FIN.png);
+background-size:cover;
+background-position:center;
+background-blend-mode:multiply;
+background-attachment:fixed;
+padding-top:5rem;
+position:relative;
+text-align:center;
+
+    button{
+        padding-bottom:10px;
+        margin-top:470px;
+        margin-left:80vw;
+        @include button2();
+    }
+}
+
+
+#feature{
+    height:auto;
+    width:100vw;
+    display:grid;
+    place-items:center;
+    background:#fff;
+   
+    .card-container{
+      
+        display:flex;
+        justify-content:space-around;
+        flex-wrap:wrap;
+        margin:2rem 0;
+        
+        .card{
+            margin:40px;
+            text-align: center;
+            border:.2rem solid black;
+            border-radius: 30px;
+         button{
+             margin-top:20px;
+             border-radius: 100px;
+             @include button();
+         }
+        }
+}
+}
+
+.blog{
+margin-top:140px;
+    height:auto;
+    width:100vw;
+    display:grid;
+    text-align:left;
+      .blog-art{
+
+        h3{
+            margin-left:70px;
+            color:red;
+        }
+        h1{
+            margin-left:70px;
+            font-size:35px;
+            color:$dark;
+        }
+    }
+
+    #view{
+        margin-left:80vw;
+        @include button2();
+    }
+    
+    .art-container{
+
+        display:flex;
+        justify-content:space-around;
+        flex-wrap:wrap;
+        margin:2rem 0;
+       
+        h1{
+            
+            margin:15px;
+            font-size:20px;
+            color:$dark;
+            @include button3();
+        }
+        p{
+            font-size:11px;
+            color:$dark;
+        }
+        img{
+            width:100%;
+            height:50%;
+            object-fit:cover;
+        }
+        .art{
+            width:30rem;
+            height:40rem;
+            margin:2rem;
+            background:#fff;
+            
+            .readbutton{
+                font-size:15px;
+             top:30px;
+               @include button3();
+            }
+        }
+    }
+}
+
+.stories{
+    margin-top:140px;
+    height:auto;
+    text-align:center;
+
+    .story-zaglavie{
+    h3{
+
+        font-size:17px;
+        color:$red;
+    }
+    h1{
+        margin-top:20px;
+        font-size:40px;
+        color:$dark;
+        @include button3();
+    } 
+}
+.story-photos{
+    margin-left:100px;
+    top:24vw;
+    text-align:left;
+    font-size:30px;
+    color:$dark;
+    @include button3();
+}
+.story-img{
+    text-align:right;
+    
+}
+}
+.footer{
+    background:black;
+}

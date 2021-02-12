@@ -1,0 +1,59 @@
+@mixin button(){
+    font-family: 'Rajdhani', sans-serif;
+    height:60px;
+    width:19rem;
+    border:.4rem solid $pink;
+    font-size:14px;
+    cursor:pointer;
+    padding-top:1.2%;
+    color:$pink;
+    font-weight:bold;
+text-align: center;
+    &:hover{
+        background:$pink;
+        color:#fff;
+    }
+}
+
+@mixin button2(){
+    font-family: 'Rajdhani', sans-serif;
+    height:60px;
+    width:19rem;
+    border:.4rem solid $pink;
+    font-size:17px;
+    cursor:pointer;
+    padding-top:1.2%;
+    background:red;
+    color:white;
+    font-weight:bold;
+text-align: center;
+    &:hover{
+        background:$pink;
+        color:#fff;
+    }
+}
+
+@mixin regbutton(){
+   
+    border-radius: 50%;
+    cursor:pointer;
+    color:red;
+ 
+    &:hover{
+        border:black;
+        background:red;
+        color:black;
+    }
+}
+
+@mixin button3(){
+    position: relative;
+    
+    font-family: 'Rajdhani', sans-serif;
+
+
+
+ &:hover{
+color:red;
+}
+}

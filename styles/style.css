@@ -1,0 +1,363 @@
+* {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* body {
+  overflow: hidden;
+  /* Hide scrollbars */
+}
+
+html {
+  font-size: 62%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem 0rem;
+  z-index: 10;
+  background: white;
+}
+
+header .programa {
+  margin: 2rem 0;
+  font-size: 2rem;
+  font-family: 'Rajdhani', sans-serif;
+  height: 60px;
+  width: 19rem;
+  border: 0.4rem solid #E6022D;
+  font-size: 14px;
+  cursor: pointer;
+  padding-top: 1.2%;
+  color: #E6022D;
+  font-weight: bold;
+  text-align: center;
+}
+
+header .programa:hover {
+  background: #E6022D;
+  color: #fff;
+}
+
+header nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header nav ul li {
+  margin: 1rem 0.3rem;
+}
+
+header nav ul li a {
+  font-style: normal;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333333;
+  padding: 1rem;
+}
+
+header nav ul li a:hover {
+  color: red;
+}
+
+.logo {
+  padding-top: 8px;
+  height: 70px;
+  margin: 20px;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  margin-right: 40px;
+  margin-left: 30px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 23px;
+  margin: .5rem 0;
+}
+
+.icons2 {
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.icons2 i {
+  border-radius: 50%;
+  cursor: pointer;
+  color: red;
+  font-size: 28px;
+  margin: .5rem 0;
+}
+
+.icons2 i:hover {
+  border: black;
+  background: red;
+  color: black;
+}
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background: url(https://www.lazarangelov.com/wp-content/uploads/2020/07/LA-BANNER-DT-FIN.png);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  padding-top: 5rem;
+  position: relative;
+  text-align: center;
+}
+
+.home button {
+  padding-bottom: 10px;
+  margin-top: 470px;
+  margin-left: 80vw;
+  font-family: 'Rajdhani', sans-serif;
+  height: 60px;
+  width: 19rem;
+  border: 0.4rem solid #E6022D;
+  font-size: 17px;
+  cursor: pointer;
+  padding-top: 1.2%;
+  background: red;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.home button:hover {
+  background: #E6022D;
+  color: #fff;
+}
+
+#feature {
+  height: auto;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #fff;
+}
+
+#feature .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+#feature .card-container .card {
+  margin: 40px;
+  text-align: center;
+  border: .2rem solid black;
+  border-radius: 30px;
+}
+
+#feature .card-container .card button {
+  margin-top: 20px;
+  border-radius: 100px;
+  font-family: 'Rajdhani', sans-serif;
+  height: 60px;
+  width: 19rem;
+  border: 0.4rem solid #E6022D;
+  font-size: 14px;
+  cursor: pointer;
+  padding-top: 1.2%;
+  color: #E6022D;
+  font-weight: bold;
+  text-align: center;
+}
+
+#feature .card-container .card button:hover {
+  background: #E6022D;
+  color: #fff;
+}
+
+.blog {
+  margin-top: 140px;
+  height: auto;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  text-align: left;
+}
+
+.blog .blog-art h3 {
+  margin-left: 70px;
+  color: red;
+}
+
+.blog .blog-art h1 {
+  margin-left: 70px;
+  font-size: 35px;
+  color: #333333;
+}
+
+.blog #view {
+  margin-left: 80vw;
+  font-family: 'Rajdhani', sans-serif;
+  height: 60px;
+  width: 19rem;
+  border: 0.4rem solid #E6022D;
+  font-size: 17px;
+  cursor: pointer;
+  padding-top: 1.2%;
+  background: red;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.blog #view:hover {
+  background: #E6022D;
+  color: #fff;
+}
+
+.blog .art-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.blog .art-container h1 {
+  margin: 15px;
+  font-size: 20px;
+  color: #333333;
+  position: relative;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.blog .art-container h1:hover {
+  color: red;
+}
+
+.blog .art-container p {
+  font-size: 11px;
+  color: #333333;
+}
+
+.blog .art-container img {
+  width: 100%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog .art-container .art {
+  width: 30rem;
+  height: 40rem;
+  margin: 2rem;
+  background: #fff;
+}
+
+.blog .art-container .art .readbutton {
+  font-size: 15px;
+  top: 30px;
+  position: relative;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.blog .art-container .art .readbutton:hover {
+  color: red;
+}
+
+.stories {
+  margin-top: 140px;
+  height: auto;
+  text-align: center;
+}
+
+.stories .story-zaglavie h3 {
+  font-size: 17px;
+  color: red;
+}
+
+.stories .story-zaglavie h1 {
+  margin-top: 20px;
+  font-size: 40px;
+  color: #333333;
+  position: relative;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.stories .story-zaglavie h1:hover {
+  color: red;
+}
+
+.stories .story-photos {
+  margin-left: 100px;
+  top: 24vw;
+  text-align: left;
+  font-size: 30px;
+  color: #333333;
+  position: relative;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.stories .story-photos:hover {
+  color: red;
+}
+
+.stories .story-img {
+  text-align: right;
+}
+
+.footer {
+  background: black;
+}
+/*# sourceMappingURL=style.css.map */
