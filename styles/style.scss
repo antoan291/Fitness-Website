@@ -1,7 +1,6 @@
 @import 'var';
 @import 'funkci';
-@import 'home';
-
+@import 'media';
 
 
 *{
@@ -139,12 +138,20 @@ text-align:center;
         .card{
             margin:40px;
             text-align: center;
-            border:.2rem solid black;
-            border-radius: 30px;
-         button{
-             margin-top:20px;
-             border-radius: 100px;
-             @include button();
+
+            #feature-photo{
+                height:100px;
+                padding:20px;
+                border:.2rem solid black;
+            border-radius: 10px;
+            
+            }
+         .feature-button{
+             @include button3();
+         }
+         .feat-button{
+             font-size:16px;
+             margin-top:12px;
          }
         }
 }
@@ -216,7 +223,7 @@ margin-top:140px;
     margin-top:140px;
     height:auto;
     text-align:center;
-
+margin-bottom:18vw;
     .story-zaglavie{
     h3{
 
@@ -243,6 +250,78 @@ margin-top:140px;
     
 }
 }
-.footer{
-    background:black;
+
+
+
+.footer-area{
+  
+   padding-top:140px;
+    background:#222d35;
+    display:flex;
+    justify-content:space-around;
+    padding-bottom:14vw;
+    padding-right:80px;
+   
+   
+
+    h1{
+        
+        margin-right:100px;
+        margin:20px;
+        font-size:20px;
+        color: #fff;
+    }
+    h3{
+        line-height: 2.5;
+        margin-right:100px;
+        text-align:left;
+        margin:10px;
+        font-size:13px;
+        color: #fff;
+        cursor:pointer;
+    }
+.footer-logo{
+    margin-left:70px;
+    text-align:left;
+    font-size:13px;
+    color:#8c8989;
+}
+button{
+    margin-right:100px;
+    margin-top:20px;
+    @include button2();
+}
+#textbox{
+    height:50px;
+ width:90%;
+ padding-left:20px;
+}
+}
+
+
+.under-footer{
+    border-top: 1px solid white;
+    background:#222d35;
+padding-bottom:30px;
+
+
+.debit-cards{
+    font-size:35px;
+    margin-right:80px;
+  text-align: right;
+
+  
+}
+    .under-photo{
+        text-align:center;
+        margin-top:60px;
+
+        p{
+            margin-top:15px;
+            font-size:12px;
+            text-align:left;
+            margin-left:120px;
+            color:#fff;
+        }
+    }
 }
