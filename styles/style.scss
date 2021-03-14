@@ -1,7 +1,7 @@
 @import 'var';
 @import 'funkci';
 @import 'media';
-
+@import 'jsFunkci';
 
 *{
     font-family: 'Rajdhani', sans-serif;
@@ -248,6 +248,30 @@ margin-bottom:18vw;
 .story-img{
     text-align:right;
     
+}
+
+
+.slideshow-container{
+text-align: right;
+margin-right:70px;
+
+.story-slide{
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      display:none;
+    
+}
+.dot{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
 }
 }
 
